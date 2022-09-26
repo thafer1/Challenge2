@@ -1,0 +1,185 @@
+/* Creates variable for the theme colors */
+:root {
+    --border: #b967ff;
+    --highlight: #fffb96;
+    --text: #01cdfe;
+    --background: #161c20;
+}
+
+/* Applies base styling to all page */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+}
+
+/* Provides page backroung color */
+html {
+    background-color: #0b0e10;
+}
+
+/* Sets styling for page title and navigation links */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid;
+    border-color: var(--border);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sets base styling for About Me and Work sections */
+section {
+    margin: 20px 20% 20px 20%;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+/* Styling for the titles of each section and footer */
+h2 {
+    color: var(--text);
+    text-align: center;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+/* Styling for main avatar */
+.me {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: var(--border);
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 20px var(--border);
+    border-radius: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Applies styling to main application card */
+.challenge1 {
+    display: block;
+    margin: auto;
+    padding: 20% 0 20% 0;
+    width: 95%;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+    font-size: 150%;
+    border-style: solid;
+    border-color: var(--border);
+    border-radius: 20px;
+    background-image: url(Screenshot_1.png);
+}
+
+/* Creates glow effect when hovering on main application */
+.challenge1:hover {
+    box-shadow: 0 0 20px var(--border);
+}
+
+/* Creates a grid to house secondary application cards */
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Creates grid layout for secondary applications */
+.grid-container a {
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 150%;
+    border-style: solid;
+    border-color: var(--border);
+    border-radius: 20px;
+}
+
+/* Creates glow effect when hovering on secondary applications */
+.grid-container a:hover {
+    box-shadow: 0 0 20px var(--border);
+}
+
+/* Applies background images to secondary application cards */
+.study-guide {
+    background-image: url(Screenshot_3.png);
+}
+
+.coming-soon {
+    background-image: url(code-rain.gif);
+}
+
+/* Sets styling for Contact Me section and navigation links */
+footer {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    border-top: solid;
+    border-color: var(--border);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Updates secondary application card and titles to respond to screen size */
+@media (min-width: 320px) {
+    .grid-container {grid-template-columns: repeat(1, 1fr);}
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {grid-template-columns: repeat(2, 1fr);}
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {grid-template-columns: repeat(3, 1fr);}
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+}
+
+

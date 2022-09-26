@@ -2,7 +2,7 @@
 
 ## Description
 
-As a bootcamp student hopeful to break into a career in web development it is necessary to have a portfolio. This is an important tool that will allow me to present myself and my body of work to other devs or prospevtive employers.
+As a bootcamp student hopeful to break into a career in web development it is necessary to have a portfolio. This is an important tool that will allow me to present myself and my body of work to other devs or prospective employers.
 
 ## Usage
 
