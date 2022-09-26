@@ -1,0 +1,145 @@
+:root {
+    --border: #b967ff;
+    --highlight: #fffb96;
+    --text: #01cdfe;
+    --background: #161c20;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+}
+
+html {
+    background-color: #0b0e10;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    border-bottom: solid;
+    border-color: var(--border);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+.me {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10PX;
+    border-style: solid;
+    border-color: var(--border);
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 20px var(--border);
+    border-radius: 10px;
+}
+/* .me {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+} */
+
+h2 {
+    color: var(--text);
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+}
+
+.challenge1 {
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img-1 {
+    justify-content: center;
+    margin: 25px;
+    width: 85%;
+    height: auto;
+    border-style: solid;
+    border-color: var(--border);
+    border-radius: 20px;
+}
+
+.img-1:hover {
+    color: var(--border);
+    box-shadow: 0 0 20px;
+}
+
+.work {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border-style: solid;
+    border-color: var(--border);
+    width: 25%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.card:hover {
+    color: var(--border);
+    box-shadow: 0 0 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    border-top: solid;
+    border-color: var(--border);
+    margin-left: 20%;
+    margin-right: 20%;
+}
