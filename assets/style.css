@@ -1,3 +1,4 @@
+/* Creates variable for the them colors */
 :root {
     --border: #b967ff;
     --highlight: #fffb96;
@@ -5,6 +6,7 @@
     --background: #161c20;
 }
 
+/* Applies base styling to all page */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,6 +16,7 @@
     list-style-type: none;
 }
 
+/* Provides page backroung color */
 html {
     background-color: #0b0e10;
 }
@@ -37,6 +40,7 @@ nav {
 }
 
 nav ul li {
+    font-size: 20px;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
@@ -58,6 +62,7 @@ section {
     border-radius: 10px;
 }
 
+/* Styling for main avatar */
 .me {
     display: block;
     margin-right: auto;
@@ -70,14 +75,8 @@ section {
     box-shadow: 0 0 20px var(--border);
     border-radius: 10px;
 }
-/* .me {
-    padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: auto;
-} */
 
+/* Styling for each title */
 h2 {
     color: var(--text);
     text-align: center;
@@ -87,6 +86,7 @@ h2 {
 }
 
 p {
+    font-size: 20px;
     text-align: center;
     padding: 20px;
 }
@@ -98,6 +98,7 @@ p {
     flex-direction: row;
 }
 
+/* Styling for primary application image */
 .img-1 {
     justify-content: center;
     margin: 25px;
@@ -108,11 +109,13 @@ p {
     border-radius: 20px;
 }
 
+/* creates glow effect when hovering on primary application image */
 .img-1:hover {
     color: var(--border);
     box-shadow: 0 0 20px;
 }
 
+/* creates flexbox for application links */
 .work {
     justify-content: center;
     display: flex;
@@ -122,7 +125,11 @@ p {
     margin-right: auto;
 }
 
+/* styling for application cards */
 .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     border-style: solid;
     border-color: var(--border);
     width: 25%;
@@ -130,6 +137,7 @@ p {
     border-radius: 20px;
 }
 
+/* creates glow effect when hovering on application cards */
 .card:hover {
     color: var(--border);
     box-shadow: 0 0 20px;
