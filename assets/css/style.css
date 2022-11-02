@@ -131,6 +131,10 @@ p {
     background-image: url(Screenshot_3.png);
 }
 
+.project1 {
+    background-image: url(project_screenshot.png);
+}
+
 .coming-soon {
     background-image: url(code-rain.gif);
 }
